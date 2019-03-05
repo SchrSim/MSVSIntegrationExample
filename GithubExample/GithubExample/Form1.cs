@@ -16,5 +16,20 @@ namespace GithubExample
         {
             InitializeComponent();
         }
+
+        #region Event-Handlers
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            if (tbName.Text != "")
+            {
+                MessageBox.Show("Hi, " + tbName.Text + "!");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Try again...");
+            }
+        }
+        #endregion Event-Handlers
     }
 }
